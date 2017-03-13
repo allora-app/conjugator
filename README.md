@@ -1,2 +1,2 @@
 # Conjugator
-Conjugate italian/spanish verbs
+Conjugate italian verbs
