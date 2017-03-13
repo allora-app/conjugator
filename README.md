@@ -1,2 +1,2 @@
-# conjugator
+# Conjugator
 Conjugate italian verbs
