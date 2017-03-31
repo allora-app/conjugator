@@ -41,6 +41,4 @@ buck-out/
 android/app/libs
 *.keystore
 
-*.js
-
-*.map
+dist/
