@@ -1,7 +1,6 @@
 {
-  "files": ["./src/**/*.{html,css,js}", "./dist/app.js"],
   "server": {
-    "baseDir": ".",
+    "baseDir": "dist",
     "routes": {
       "/node_modules": "node_modules"
     }
