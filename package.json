@@ -28,14 +28,18 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.46",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.1.2",
     "canonical-path": "0.0.2",
     "concurrently": "^3.2.0",
+    "html-loader": "^0.4.5",
     "lite-server": "^2.2.2",
     "lodash": "^4.16.4",
     "rimraf": "^2.5.4",
     "tslint": "^3.15.1",
     "typescript": "~2.2.2",
-    "webpack": "^2.3.2"
+    "webpack": "^2.3.2",
+    "webpack-merge": "^4.1.0"
   },
   "repository": {}
 }
