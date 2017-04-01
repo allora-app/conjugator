@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --bail",
+    "build": "rimraf dist && webpack --config config/webpack.dev.js --bail",
     "serve": "lite-server -c=bs-config.json",
     "prestart": "npm run build",
-    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "start": "concurrently \"npm run build\" \"npm run serve\"",
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
   "keywords": [],
