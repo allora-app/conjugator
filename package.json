@@ -12,18 +12,18 @@
   "author": "Igor Blinnikov",
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/core": "~2.4.0",
-    "@angular/forms": "~2.4.0",
-    "@angular/http": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@angular/platform-browser-dynamic": "~2.4.0",
-    "@angular/router": "~3.4.0",
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/http": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/router": "^4.0.1",
     "angular-in-memory-web-api": "~0.2.4",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
-    "zone.js": "^0.7.4"
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
     "@types/node": "^6.0.46",
@@ -42,7 +42,7 @@
     "rimraf": "^2.5.4",
     "style-loader": "^0.16.1",
     "tslint": "^3.15.1",
-    "typescript": "~2.2.2",
+    "typescript": "^2.2.2",
     "webpack": "^2.3.2",
     "webpack-merge": "^4.1.0"
   },
