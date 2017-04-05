@@ -15,4 +15,9 @@ module.exports = webpackMerge(commonConfig, {
     plugins: [
       new ExtractTextPlugin('[name].css')
     ],
+
+    devServer: {
+      historyApiFallback: true,
+      stats: 'minimal'
+    }
 });
