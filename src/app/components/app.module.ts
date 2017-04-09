@@ -5,10 +5,12 @@ import 'hammerjs';
 import '@angular/material/core/theming/prebuilt/indigo-pink.css'
 
 import { AppComponent }  from './app.component';
+import { ScrapeService } from '../services/scrape.service';
 
 @NgModule({
   imports:      [ BrowserModule, MaterialModule ],
   declarations: [ AppComponent ],
+  providers: [ScrapeService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
