@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ScrapeService } from '../services/scrape.service';
-
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -10,9 +8,7 @@ import { ScrapeService } from '../services/scrape.service';
 export class AppComponent implements OnInit {
   header = 'Custom Toolbar';
 
-  constructor(private scrapeService: ScrapeService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.scrapeService.scrapePage();
-  }
+  ngOnInit(): void { }
 }
