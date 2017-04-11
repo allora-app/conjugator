@@ -1,10 +1,11 @@
 <md-select placeholder="Your language" [(ngModel)]="selectedLanguage" name="language">
-    <md-option *ngFor="let lang of languages" [value]="lang.value">
-      <img src="{{lang.image}}">
-      {{lang.viewValue}}
-    </md-option>
-  </md-select>
+  <md-option *ngFor="let lang of languages" [value]="lang.value">
+    <img src="{{lang.image}}"> {{lang.viewValue}}
+  </md-option>
+</md-select>
 
-  <md-input-container>
-    <input mdInput placeholder="Enter verb to search" value="essere">
-  </md-input-container>
+<md-input-container>
+  <input mdInput placeholder="Enter verb to search" value="essere">
+</md-input-container>
+
+<button md-raised-button>Search</button>

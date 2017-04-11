@@ -7,6 +7,11 @@ md-select {
     margin-right: 15px;
 }
 
+button.mat-raised-button {
+    margin-left: 15px;
+    height: 40px;
+}
+
 :host /deep/ .mat-select-trigger {
     margin: 0.55em 0;
 }
