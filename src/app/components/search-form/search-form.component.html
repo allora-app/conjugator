@@ -1,4 +1,9 @@
-<md-select placeholder="Your language" [(ngModel)]="selectedLanguage" name="language">
+<img *ngIf="showImage" [src]="selectedImage">
+
+<md-select placeholder="Your language" [(ngModel)]="selectedLanguage" name="language" 
+    (change)="onChange(selectedLanguage)"
+    (onOpen)="onOpen()"
+    (onClose)="onClose()">
   <md-option *ngFor="let lang of languages" [value]="lang.value">
     <img src="{{lang.image}}"> {{lang.viewValue}}
   </md-option>

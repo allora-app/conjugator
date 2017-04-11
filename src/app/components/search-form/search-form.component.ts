@@ -10,9 +10,27 @@ var es = require("../../../assets/Spain.png")
 })
 export class SearchFormComponent {
   selectedLanguage: string;
+  selectedImage: object = it;
+  showImage = true;
 
   languages = [
-    { value: 'Italy', viewValue: 'Italian', image: it },
-    { value: 'Spain', viewValue: 'Spanish', image: es }
+    { value: 'IT', viewValue: 'Italian', image: it },
+    { value: 'ES', viewValue: 'Spanish', image: es }
   ];
+
+  onChange(lang: any) {
+    if(lang === 'IT') {
+      this.selectedImage = it;
+    } else if(lang === 'ES') {
+      this.selectedImage = es;
+    }
+  }
+
+  onOpen() {
+    this.showImage = false;
+  }
+
+  onClose() {
+    this.showImage = true;
+  }
 }
