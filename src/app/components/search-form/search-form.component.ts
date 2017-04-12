@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 
-var it = require("../../../assets/Italy.png");
-var es = require("../../../assets/Spain.png")
+var it = require("../../../assets/it.png");
+var es = require("../../../assets/es.png");
+
+const Italian = 'it';
+const Spanish = 'es';
 
 @Component({
   selector: 'search-form',
@@ -10,27 +13,28 @@ var es = require("../../../assets/Spain.png")
 })
 export class SearchFormComponent {
   selectedLanguage: string;
-  selectedImage: object = it;
-  showImage = true;
+  selectedImage: string;
+  searchVerb: string;
 
   languages = [
-    { value: 'IT', viewValue: 'Italian', image: it },
-    { value: 'ES', viewValue: 'Spanish', image: es }
+    { value: Italian, viewValue: 'Italian', image: it },
+    { value: Spanish, viewValue: 'Spanish', image: es }
   ];
 
+  constructor() {
+    this.selectedLanguage = Italian;
+    this.selectedImage = it;
+  }
+
   onChange(lang: any) {
-    if(lang === 'IT') {
+    if(lang === Italian) {
       this.selectedImage = it;
-    } else if(lang === 'ES') {
+    } else if(lang === Spanish) {
       this.selectedImage = es;
     }
   }
 
-  onOpen() {
-    this.showImage = false;
-  }
-
-  onClose() {
-    this.showImage = true;
+  search() {
+    console.log(this.searchVerb);
   }
 }

@@ -3,24 +3,36 @@
     display: flex;
 }
 
-md-select {
+img.flag {
+    height: 40px;
+    width: 60px;
     margin-right: 15px;
 }
 
-button.mat-raised-button {
-    margin-left: 15px;
-    height: 40px;
+md-select {
+    margin-right: 15px;
 }
 
 :host /deep/ .mat-select-trigger {
     margin: 0.55em 0;
 }
 
-.mat-option {
+:host-context(body) .mat-select-panel {
+    width: 140px;
+}
+
+md-option {
     display: flex;
-    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    padding: 8px 16px;
 }
 
 md-input-container {
     flex: 1 1 auto;
+}
+
+button.mat-raised-button {
+    margin-left: 15px;
+    height: 40px;
 }
