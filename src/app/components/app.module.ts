@@ -14,7 +14,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 // pink-bluegrey.css
 // purple-green.css
 
-import '@angular/material/core/theming/prebuilt/indigo-pink.css'
+import '@angular/material/prebuilt-themes/indigo-pink.css'
 
 @NgModule({
   imports:      [ FormsModule, BrowserModule, MaterialModule, BrowserAnimationsModule ],
