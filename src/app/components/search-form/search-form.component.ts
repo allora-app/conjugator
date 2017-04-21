@@ -23,14 +23,13 @@ export class SearchFormComponent {
 
   constructor() {
     this.selectedLanguage = Italian;
-    this.selectedImage = it;
   }
 
-  onChange(lang: any) {
-    if(lang === Italian) {
-      this.selectedImage = it;
-    } else if(lang === Spanish) {
-      this.selectedImage = es;
+  getSelectedImage() {
+    if(this.selectedLanguage === Italian) {
+      return it;
+    } else if(this.selectedLanguage === Spanish) {
+      return es;
     }
   }
 
