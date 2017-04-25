@@ -1,7 +1,6 @@
 <img class="flag" [src]="getSelectedImage()">
 
-<md-select name="language"
-    [(ngModel)]="selectedLanguage">
+<md-select name="language" [(ngModel)]="selectedLanguage">
   <md-option *ngFor="let lang of languages" [value]="lang.value">
     {{lang.viewValue}}
   </md-option>
