@@ -7,6 +7,7 @@ import 'hammerjs';
 
 import { AppComponent }  from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 // Available themes:
 // deeppurple-amber.css
@@ -18,7 +19,7 @@ import '@angular/material/prebuilt-themes/indigo-pink.css'
 
 @NgModule({
   imports:      [ FormsModule, BrowserModule, MaterialModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, SearchFormComponent ],
+  declarations: [ AppComponent, SearchFormComponent, SearchResultsComponent ],
   providers:    [],
   bootstrap:    [ AppComponent ]
 })
