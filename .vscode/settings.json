@@ -1,4 +1,7 @@
 {
     "vsicons.presets.angular": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
 }
