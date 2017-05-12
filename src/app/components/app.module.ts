@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import 'hammerjs';
@@ -18,7 +19,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import '@angular/material/prebuilt-themes/indigo-pink.css'
 
 @NgModule({
-  imports:      [ FormsModule, BrowserModule, MaterialModule, BrowserAnimationsModule ],
+  imports:      [ BrowserAnimationsModule, BrowserModule, FlexLayoutModule, FormsModule, MaterialModule ],
   declarations: [ AppComponent, SearchFormComponent, SearchResultsComponent ],
   providers:    [],
   bootstrap:    [ AppComponent ]
