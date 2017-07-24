@@ -40,7 +40,7 @@
     "html-webpack-plugin": "2.29.0",
     "lodash": "4.17.4",
     "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.4",
+    "rimraf": "2.6.1",
     "style-loader": "0.18.2",
     "tslint": "5.4.3",
     "typescript": "2.4.1",
